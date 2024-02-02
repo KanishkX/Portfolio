@@ -1,0 +1,63 @@
+.skills{
+    overflow: hidden;
+    width: 70vw;
+    height: 60vh;
+    max-width: 65rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+.skillBar{
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem;
+    width: 100vw;
+    max-width: 80%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+img{
+    width: 12%;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+.twoPiece {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.skillTitle {
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 10px; /* Add margin-bottom for space between title and description */
+}
+
+.skillDesc {
+    font-weight: 300;
+    font-size: 1.1rem;
+    max-width: 50rem;
+    margin-top: 10px; /* Add margin-top for space between title and description */
+}
+/* .skills{
+    animation: fade linear;
+    animation-timeline: view();
+    animation-range: entry 50% cover 50%;
+}
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+    0%{
+        opacity: 0;
+    }
+  } */
