@@ -32,8 +32,9 @@ export function Navbar() {
   const [modalShow, setModalShow] = useState(false);
 
   return (
-    <div className="navbar">
-      <div className='logo'></div>
+    <>
+      {/* <div className='logo'></div> */}
+      < br/>
       <button
         className='desktopMenuBtn'
         onClick={() => setModalShow(true)}
@@ -48,6 +49,6 @@ export function Navbar() {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-    </div>
+    </>
   );
 }

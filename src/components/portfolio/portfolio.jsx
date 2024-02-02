@@ -12,7 +12,7 @@ export function Portfolio(){
     return (
     <div className="portfolio">
         <section id = "work">
-            <h2 className="workstitle">My Portfolio</h2>
+            <h2 className="workstitle">Portfolio</h2>
             <div className="works">
                 <div className="cards">
                 <Card raised

@@ -7,15 +7,15 @@ export function Intro(){
             <div className="introContent">
                 <span className="hello">hello</span>
                 <span className = "introText">I'm <span className = "introName">Kanishk</span></span> 
-                <p className = "introPara">IT Student currently stuying in 2<sup>nd</sup>  at Nova Scotia Community College </p>
+                <p className = "introPara">IT Student currently stuying in 2<sup>nd</sup> Year at Nova Scotia Community College </p>
             </div>
-            <section className="pic">
+            <div className="pic">
                 {/* <img id="toggleTheme" class="theme-btn" src="assets/theme_light.png" alt="theme icon"/> */}
                 <div className="hero-pic">
                     <div className="inner-circle"></div>
                     <img src={pic}/>
                 </div>
-            </section>
+            </div>
         </section>
     )
 }

@@ -73,23 +73,40 @@
   }
 
 
-@media screen and (max-width:650px) {
-    .intro{
-        margin: 0;
+  @media screen and (max-width: 650px) {
+    .intro {
+        flex-direction: column;
+        height: 80vh;
     }
-    .introPara{
-        max-width: 50%;
+    .introPara {
+        max-width: 100%; /* Adjusted to take full width on smaller screens */
+        font-weight: 600; /* Moved font-weight adjustment to general style */
+    }
+    .hero-pic {
+        margin-top: 1rem; /* Added margin for better spacing */
     }
 }
 
-@media screen and (max-width:800px) {
-  .hero-pic{
-    height: 200px;
-    width: 200px;
-  }
+@media screen and (max-width: 800px) {
+    .hero-pic {
+        height: 200px;
+        width: 200px;
+    }
 }
-@media screen and (max-width:450px) {
-  .introPara{
-    font-weight: 600;
+
+@media screen and (max-width: 450px) {
+  .introText{
+    font-size: 35px;
   }
+    .introPara {
+      font-size: medium;
+      font-weight: 600;
+    }
+}
+
+/* Added "px" to the media query value to make it valid */
+@media screen and (max-width: 1024px) {
+    .intro {
+        flex-direction: column-reverse;
+    }
 }
