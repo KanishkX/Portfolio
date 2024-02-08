@@ -45,7 +45,7 @@ img{
     max-width: 50rem;
     margin-top: 10px; /* Add margin-top for space between title and description */
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 530px) {
     .skills{
         height: 80vh;
     }

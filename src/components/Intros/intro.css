@@ -67,9 +67,9 @@
   .hero-pic img{
     height: 100%;
     object-fit: cover;
-    object-position: top 0.9rem right -0.2rem ;
+    object-position: top 0rem right -0.2rem ;
     border-radius: 50%;
-    transform: scale(1.6);
+    transform: scale(1.1);
   }
 
 
