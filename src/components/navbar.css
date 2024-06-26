@@ -33,13 +33,61 @@
     justify-content: center;
     padding: 10px; 
     border-radius: 2rem;
+    border: 2px solid black;
     font-weight: bold;
     position: fixed;
     z-index:9999;
     bottom :10px;
     right: 10px;
 }
+.desktopMenuListItem{
+    margin: 1 rem;
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: large;
+    
+}
+/* .desktopMenuListItem:hover{
+    color: black;
+    padding-bottom: 0.1rem;
+    border-bottom: 3px solid black;
+} */
 
+.desktopMenuListItem{
+    display: inline-block;
+    padding-bottom: 0.25rem; /* defines the space between text and underline */
+    position: relative;
+  }
+  
+  .desktopMenuListItem::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: width 0.25s ease-out;
+  }
+  .desktopMenuListItem:hover::before {
+    width: 100%;
+  }
+
+.desktopMenu{
+    width: 40vw;
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    height: 20px ;
+    background-color: #f95959;
+    border-radius: 25px;
+    padding: 20px;
+}
 /* @media only screen and (max-width:50px){
     .desktopMenuBtn{
         }

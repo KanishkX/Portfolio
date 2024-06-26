@@ -2,7 +2,7 @@
     margin: 0 auto;
     min-height: cal(100vh - 4rem);
     width: 100vw;
-    max-width: 60rem;
+    max-width: 70rem;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -23,22 +23,6 @@
     justify-content: center;
     text-align: center;
 }
-/* .portfolio{
-    animation: fade linear;
-    animation-timeline: view();
-    animation-range: entry 50% cover 50%;
-  }
-  @keyframes fade {
-    from {
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-    0%{
-      opacity: 0;
-    }
-  } */
 @media screen and (max-width: 585px) {
     .works{
         flex-direction: column;

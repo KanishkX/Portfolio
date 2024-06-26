@@ -3,16 +3,16 @@ import React from 'react';
 export function Contact(){
     return(
     <div id="contact">
-      <h1 className="contactPageTitle">
+      <h1 class="contactPageTitle">
         Contact
-        <span className="contactDesc">Please</span>
+        <span class="contactDesc">Please</span>
       </h1>
-      <div className="contactForm">
+      <div class="contactForm">
         <form>
-          <input type="text" className="name" placeholder="Your Name" />
-          <input type="email" className="email" placeholder="Your Email" />
-          <textarea className="msg" name="message" rows="5" placeholder="Your Message" />
-          <button type = "Submit" value='send' className='submitBtn'>Submit</button>
+          <input type="text" class="name" placeholder="Your Name" />
+          <input type="email" class="email" placeholder="Your Email" />
+          <textarea class="msg" name="message" rows="5" placeholder="Your Message" />
+          <button type = "Submit" value='send' class='submitBtn'>Submit</button>
         </form>
       </div>
     </div>)

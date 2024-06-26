@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './navbar.css';
 import linkedin from '../assets/linkedin_icon.png';
 import contact from '../assets/contact.png';
-import Button from 'react-bootstrap/Button';
+import { Link } from 'react-scroll';
 import Modal from 'react-bootstrap/Modal';
 import 'bootstrap/dist/css/bootstrap.min.css';
 function MyVerticallyCenteredModal(props) {
@@ -19,9 +19,9 @@ function MyVerticallyCenteredModal(props) {
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
-        <div className="linkedinContainer">
-          <h4 className='linkedinTitle'>Linkedin:</h4>
-          <a href="https://www.linkedin.com/in/kanishkdogra/"><img src = {linkedin} className = "linkedin" /></a>
+        <div class="linkedinContainer">
+          <h4 class='linkedinTitle'>Linkedin:</h4>
+          <a href="https://www.linkedin.com/in/kanishkdogra/"><img src = {linkedin} class = "linkedin" /></a>
         </div>
       </Modal.Body>
     </Modal>
@@ -35,11 +35,17 @@ export function Navbar() {
     <>
       {/* <div className='logo'></div> */}
       < br/>
+      <div class='desktopMenu'>
+        <Link activeClass='active' to='intro' spy={true} smooth={true} offset={-50} className='desktopMenuListItem'>About</Link>
+        <Link activeClass='active' to='skills' spy={true} smooth={true} offset={-50} className='desktopMenuListItem'>Skills</Link>
+        <Link activeClass='active' to='portfolio' spy={true} smooth={true} offset={-50} className='desktopMenuListItem'>Portfolio</Link>
+      </div>
+      
       <button
-        className='desktopMenuBtn'
+        class='desktopMenuBtn'
         onClick={() => setModalShow(true)}
       >
-        <img src={contact} className="desktopMenuImg" alt="Contact" />
+        <img src={contact} class="desktopMenuImg" alt="Contact" />
         Contact Me
       </button>
       {/* <Button variant="primary" onClick={() => setModalShow(true)}>
